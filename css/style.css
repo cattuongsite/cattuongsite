@@ -86,6 +86,13 @@ a:focus{
    }
 
 .text { color: #b06010; }
+.red { color: #ff0000; }
+.dark-blue { color: #000080; }
+.text-center { text-align: center; }
+.payment p { font-size: 25px; }
+.payment-box { margin-top: 20px; padding: 8px; border: 2px dashed #FF4500; word-wrap: break-word;  }
+.payment-box.dark-blue p { font-size: 22px; }
+
 .modal-title {
     font-size: 30px;
     text-align: center;
