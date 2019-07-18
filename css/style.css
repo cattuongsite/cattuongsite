@@ -35,6 +35,56 @@ input[type="submit"],input[type="reset"],a,.w3_agile_service_more a i{
 a:focus{
 	outline:none;
 }
+
+.hotline-fixed { font-size:20px; position:fixed; bottom:3px; left:3px; z-index:999 }
+.hotline-fixedLk a { background:#E88A25; background: linear-gradient(to right, #E88A25 , #D40000); color:#fff; padding:12px 24px 10px 50px; border:2px solid #fff; border-radius:30px; display:block }
+.dk-spin { position:fixed; left:-12px; bottom:-12px; height: 80px; width: 80px; z-index:999999; }
+.dk-spin a { width:100%; height:100%; display:block; text-decoration: none; }
+.dk-spinHotline { margin:25%; position:absolute; left:0; top:0; z-index:999999; }
+.dk-spinHotline i { font-size: 2em; }
+.dk-spin .dk-spinLoad {
+    position:absolute; left:0; top:0; z-index:99999;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #D40000;
+  border-radius: 50%;
+  -webkit-animation: circlePulse 2s ease infinite;
+          animation: circlePulse 2s ease infinite;
+}
+@-webkit-keyframes circlePulse {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  80% {
+    opacity: .8;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+.dk-spiner { background-color: #D40000; width:100%; height:100%; border-radius: 50%;
+-webkit-animation: dk-spiner 2s infinite ease-in; animation: dk-spiner 2s infinite ease-in; }
+   @-webkit-keyframes dk-spiner {
+      0% {
+         -webkit-transform: scale(0); transform: scale(0); opacity: 1;
+      }
+      100% {
+         -webkit-transform: scale(1); transform: scale(1); opacity: 0;
+      }
+   }
+
+   @keyframes dk-spiner {
+      0% {
+         -webkit-transform: scale(0); transform: scale(0); opacity: 1;
+      }
+      100% {
+         -webkit-transform: scale(1); transform: scale(1); opacity: 0;
+      }
+   }
+
 .text { color: #b06010; }
 .modal-title {
     font-size: 30px;
