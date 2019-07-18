@@ -1694,8 +1694,8 @@ table.table.table-striped,.table-bordered,.bs-docs-example {
 }
 .agileinfo_services_grid1_pos span{
 	color: #fff;
-    font-size: 1em;
-    top: 15px;
+    font-size: 1.2em;
+    padding-top: 15px;
 }
 .agileinfo_services_grid1 h4{
     font-size: 1.2em;
