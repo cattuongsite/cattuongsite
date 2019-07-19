@@ -2,16 +2,16 @@
 * jQuery scroroller Plugin 1.0
 *
 * http://www.tinywall.net/
-* 
+*
 * Developers: Arun David, Boobalan
-* Copyright (c) 2014 
+* Copyright (c) 2014
 */
 (function($){
     $(window).on("load",function(){
         $(document).scrollzipInit();
         $(document).rollerInit();
     });
-    $(window).on("load scroll resize", function(){
+    $(window).on("scroll resize", function(){
         $('.numscroller').scrollzip({
             showFunction    :   function() {
                                     numberRoller($(this).attr('data-slno'));
@@ -20,15 +20,15 @@
         });
     });
     $.fn.scrollzipInit=function(){
-        $('body').prepend("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>" );
+        $('body').append("<div style='position:fixed;top:0px;left:0px;width:0;height:0;' id='scrollzipPoint'></div>" );
     };
     $.fn.rollerInit=function(){
         var i=0;
         $('.numscroller').each(function() {
             i++;
-           $(this).attr('data-slno',i); 
+           $(this).attr('data-slno',i);
            $(this).addClass("roller-title-number-"+i);
-        });        
+        });
     };
     $.fn.scrollzip = function(options){
         var settings = $.extend({
@@ -74,7 +74,7 @@
                 //increment=Math.floor((timediff*1000)/10);
             //}//alert(increment);
             numberRoll(slno,min,max,increment,timeout);
-            
+
     }
     function numberRoll(slno,min,max,increment,timeout){//alert(slno+"="+min+"="+max+"="+increment+"="+timeout);
         if(min<=max){
