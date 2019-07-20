@@ -1375,20 +1375,21 @@ h3.agileits-icons-title {
 	}
 }
 @media (max-width: 480px){
-	.bs-glyphicons li {
-		width: 31%;
-	}
+    .video iframe { width: 320px; height: 270px; }
+    .bs-glyphicons li {
+        width: 31%;
+    }
 }
 @media (max-width: 414px){
-	h3.agileits-icons-title {
-		font-size: 23px;
-	}
-	h3.icon-subheading {
-		font-size: 18px;
-	}
-	.bs-glyphicons li {
-		width: 31.33%;
-	}
+    h3.agileits-icons-title {
+        font-size: 23px;
+    }
+    h3.icon-subheading {
+        font-size: 18px;
+    }
+    .bs-glyphicons li {
+        width: 31.33%;
+    }
 }
 @media (max-width: 384px){
 	.icon-box {
