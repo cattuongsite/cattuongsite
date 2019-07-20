@@ -94,6 +94,7 @@ a:focus{
 .payment-box { margin-top: 20px; padding: 8px; border: 2px dashed #FF4500; word-wrap: break-word;  }
 .payment-box.dark-blue p { font-size: 22px; }
 .services p { line-height: 2em; margin: 2em 0; }
+.video iframe { width: 720px; height: 480px; }
 
 .modal-title {
     font-size: 30px;
@@ -681,7 +682,7 @@ p.bui {
 /*-- //popular --*/
 /* banner bottom */
 .banner-bottom.mid-section-agileits {
-    background:#015bb1;
+    background:#dc9043;
     padding: 0;
 }
 .bannerbottomleft {
@@ -1367,6 +1368,7 @@ h3.agileits-icons-title {
 	}
 }
 @media (max-width: 640px){
+    .video iframe { width: 450px; height: 320px; }
 	.icon-box {
 		float: left;
 		width: 50%;
